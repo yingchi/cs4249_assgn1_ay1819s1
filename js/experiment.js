@@ -1,10 +1,10 @@
 'use strict';
 
 // Location of data files
-const trialsFile = "./data/experiments.csv"
-const menuL1File = "./data/menu_depth_1.csv"
-const menuL2File = "./data/menu_depth_2.csv"
-const menuL3File = "./data/menu_depth_3.csv"
+const trialsFile = "./data/experiments_breadth_1.csv"
+const menuL1File = "./data/menu_depth_1_breadth_1.csv"
+const menuL2File = "./data/menu_depth_2_breadth_1.csv"
+const menuL3File = "./data/menu_depth_3_breadth_1.csv"
 
 // Global variables
 var menu;
