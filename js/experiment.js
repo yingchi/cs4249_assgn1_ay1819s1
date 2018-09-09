@@ -23,9 +23,6 @@ var markingMenuSubscription = null;
 var radialMenuSvg = null;
 
 
-
-
-
 // Load CSV files from data and return text
 function getData(relativePath) {
 	var xmlHttp = new XMLHttpRequest();
@@ -203,7 +200,6 @@ function formatMarkingMenuData(data) {
 	for (var key in menuItems) {
 		menuItemsList.push(menuItems[key]);
 	}
-
 	return menuItemsList;
 }
 
@@ -363,7 +359,6 @@ function formatRadialMenuData(data) {
 		}
 		menuItemsList.push(menuItems[key]);
 	}
-
 	return {
 		'_children': menuItemsList
 	};
