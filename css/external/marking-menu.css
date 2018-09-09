@@ -9,7 +9,7 @@
   border-radius: 8px;
   background-color: #f2f2f2;
   padding: 4px;
-  width: 100px;
+  width: 110px; /* modified to cater to longer words, original 100px */
   height: 20px;
   overflow: hidden;
   vertical-align: middle;

@@ -554,17 +554,18 @@ html,body { height:100%; width: 95vw }
 }
 
   #radialmenu {
-        font-family: 'stint ultra condensed', tahoma, sans-serif;
-        fill: #fff !important;
+        /* font-family: 'stint ultra condensed', tahoma, sans-serif; */
+        font-famity: 'sans-serif';
+        /* fill: #fff !important; */
     }
 
     .mouseover {
         opacity: 0.5;
     }
     body > svg > text {
-        font-size: 60px;
         fill: #fff;
-        font-family: 'stint ultra condensed', tahoma, sans-serif;
+        font-famity: 'sans-serif';
+        /* font-family: 'stint ultra condensed', tahoma, sans-serif; */
     }
     .menuitem {
         fill: #555;
