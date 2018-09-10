@@ -1,76 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE HTML>
+<html>
 
-    <title>Experiment to compare Marking and Radial menus</title>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>CS4249 Experiment</title>
+  <link rel="stylesheet" href="css/index.css" type="text/css" media="screen" />
+</head>
 
-	<!-- Marking Menu Stylesheet -->
-   <link href="./css/external/marking-menu.css" rel="stylesheet">
-	<!-- Fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed' rel='stylesheet' type='text/css'>
-	<!-- Experiment Stylesheet -->
-	<link href="./css/experiment.css" rel="stylesheet"> 
-
-
-  </head>
-  <body onload="initExperiment()" >
-
-	<!-- State Div -->
-    <div class="row" id="state-container">
-      <div class="cellstate">
-	<span class="label label-primary">Trial</span>
-	<span class="label label-default" id="trialNumber">&nbsp;</span>
+<body>
+  <div id="logo"></div>
+  <div id="basic-accordian" >
+    <div id="test-header" class="accordion_headings">Home</div>
+    <div id="test-content">
+      <div class="accordion_child">
+        <h1>Welcome to our awesome experiment!</h1>
+        <h2>Please fill the participant ID given by the instructor:</h2>
+        <form action="/action_page.php" class="form_settings">
+          Participant ID: <input type="text" name="user_id" required>
+          <input type="submit" autocomplete="off" class="submit">
+        </form>
       </div>
-      <div class="cellstate">
-      <span class="label label-primary">Menu Type</span>
-	<span class="label label-default" id="menuType">&nbsp;</span>
-      </div>
-      <div class="cellstate">
-        <span class="label label-primary">Menu Depth</span>
-	<span class="label label-default" id="menuDepth">&nbsp;</span>
-      </div>
-      <div class="cellstate">
-        <span class="label label-primary">IV 3</span>
-	<span class="label label-default">To be implemented</span>
-      </div>
-            <div class="cellstimulusresponse">
-        <span class="label label-primary">Please select</span>
-	<span class="label label-default" id="targetItem">&nbsp;</span>
-      </div>
-        <div class="cellstimulusresponse">
-        <span class="label label-primary">Item selected</span>
-	<span class="label label-default" id="selectedItem">&nbsp;</span>
-      </div>            
-        <div class="cellnext">
-      		<button id="nextButton" type="button" class="btn btn-block btn-primary btn-lg" onclick="loadNextTrial(event)">Next</button>
-      </div>      
     </div>
-
-<!--  Interaction Div-->
-
-	<div class="row" id="interaction-container"  >
-	</div>
-
-
-
-  </body>
-    
-    
-    <!-- Marking Menu Scripts -->
-    <script src="./js/external/jquery-3.3.1.min.js"></script>
-    <script src="./js/external/rxjs.umd.js"></script>
-  	<script src="./js/external/marking-menu.js"></script>
-    
-    <!-- Radial Menu Scripts -->
-    <script src="./js/external/d3.min.js" ></script>
-    <script src="./js/external/es6-promise.auto.min.js"></script>
-    <script src="./js/external/sunburst-menu.js"></script>
-    
-    <!-- Experiment Scripts -->
-    <script src="./js/experiment-tracker.js"></script>
-    <script src="./js/experiment.js"></script>
-
+    <div id="test1-header" class="accordion_headings"> &nbsp; </div>
+    </div>
+  </div>
+  <div id="footer">
+    <p>Author: Yingchi PEI | CS4249 Project</p>
+  </div>
+</body>
 </html>
