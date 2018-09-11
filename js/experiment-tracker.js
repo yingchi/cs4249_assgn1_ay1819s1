@@ -52,7 +52,8 @@ class ExperimentTracker {
 		var hiddenLink = document.createElement('a');
 		hiddenLink.href = 'data:text/csv;charset=utf-8,' + encodeURI(csvFile);
 		hiddenLink.target = '_blank';
-		hiddenLink.download = 'experiment.csv';
+        let userId = localStorage.getItem("cs4249exp.userId");
+		hiddenLink.download = 'experiment_id' + userId + '.csv';
 		document.body.appendChild(hiddenLink);
 		hiddenLink.click();
 	}
