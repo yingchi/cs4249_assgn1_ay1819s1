@@ -44,10 +44,14 @@ function initExperiment() {
 		var cells = records[i].split(",");
 		var menuType = cells[0].trim();
 		var menuDepth = cells[1].trim();
-		var targetItem = cells[2].trim();
+        var menuBreadth = cells[2].trim();
+        var inputDevice = cells[3].trim();
+		var targetItem = cells[4].trim();
 		trialsData[i] = {
 			'Menu Type': menuType,
 			'Menu Depth': menuDepth,
+            'Menu Breadth': menuBreadth,
+            'Input Device': inputDevice,
 			'Target Item': targetItem
 		};
 	}
@@ -84,11 +88,15 @@ function nextTrial() {
 
 		var menuType = trialsData[currentTrial]['Menu Type'];
 		var menuDepth = trialsData[currentTrial]['Menu Depth'];
+        var menuBreadth = trialsData[currentTrial]['Menu Breadth'];
+        var inputDevice = trialsData[currentTrial]['Input Device'];
 		var targetItem = trialsData[currentTrial]['Target Item'];
 
 		document.getElementById("trialNumber").innerHTML = String(currentTrial) + "/" + String(numTrials);
 		document.getElementById("menuType").innerHTML = menuType;
 		document.getElementById("menuDepth").innerHTML = menuDepth;
+        document.getElementById("menuBreadth").innerHTML = menuBreadth;
+        document.getElementById("inputDevice").innerHTML = inputDevice;
 		document.getElementById("targetItem").innerHTML = targetItem;
 		document.getElementById("selectedItem").innerHTML = "&nbsp;";
 		// Set IV3 state over here
@@ -97,6 +105,8 @@ function nextTrial() {
 		tracker.trial = currentTrial;
 		tracker.menuType = menuType;
 		tracker.menuDepth = menuDepth;
+        tracker.menuBreadth = menuBreadth;
+        tracker.inputDevice = inputDevice;
 		tracker.targetItem = targetItem;
 
 		if (menuType === "Marking") {
@@ -135,6 +145,7 @@ function nextTrial() {
 	    var nextButton = document.getElementById("nextButton");
 	    nextButton.innerHTML = "Done";
 		tracker.toCsv();
+        window.location.href = "post_qn.html";
 	}
 }
 

@@ -1,7 +1,11 @@
-Menu Type,Menu Depth,Target Item
-Marking,1,Transport
-Marking,2,Stool
-Marking,3,Orange2
-Radial,1,Transport
-Radial,2,Stool
-Radial,3,Orange2
+Menu Type,Menu Depth,Menu Breadth,Input Device,Target Item
+Marking,1,4,Mouse,Transport
+Marking,1,4,Mouse,Fruits
+Marking,1,4,Mouse,Animals
+Marking,2,4,Mouse,Stool
+Marking,2,4,Mouse,Apple
+Marking,2,4,Mouse,Stool
+Marking,3,4,Mouse,Orange2
+Radial,1,4,Mouse,Transport
+Radial,2,4,Mouse,Stool
+Radial,3,4,Mouse,Orange2

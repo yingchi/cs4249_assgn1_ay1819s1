@@ -236,6 +236,15 @@ ol li {
     margin: 0 0 20px 0;
 }
 
+form {
+    margin: 0 auto;
+    padding: 0 0 50px 25px;
+}
+
+form .submit {
+    width: 200px;
+}
+
 table {
     margin: 10px 0 30px 0;
 }
