@@ -5,7 +5,7 @@ Id,Parent,Label
 4,0,Animals
 5,1,Apple
 6,1,Banana
-7,1,Cheery
+7,1,Cherry
 8,1,Orange
 9,2,Coffee
 10,2,Tea
@@ -27,10 +27,10 @@ Id,Parent,Label
 26,6,Banana2
 27,6,Banana3
 28,6,Banana4
-29,7,Cheery1
-30,7,Cheery2
-31,7,Cheery3
-32,7,Cheery4
+29,7,Cherry1
+30,7,Cherry2
+31,7,Cherry3
+32,7,Cherry4
 33,8,Orange1
 34,8,Orange2
 35,8,Orange3
