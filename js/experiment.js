@@ -108,6 +108,10 @@ function nextTrial() {
 
     if (currentTrial <= numTrials) {
 
+        if (currentTrial % 12 === 0) {
+            window.alert("How about having a 10-second break?")
+        }
+
         var menuType = trialsData[currentTrial]['Menu Type'];
         var menuDepth = trialsData[currentTrial]['Menu Depth'];
         var menuBreadth = trialsData[currentTrial]['Menu Breadth'];
