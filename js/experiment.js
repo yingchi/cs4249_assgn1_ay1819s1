@@ -105,7 +105,6 @@ function loadNextTrial(e) {
 // Move to next trai and record events
 function nextTrial() {
 
-
     if (currentTrial <= numTrials) {
 
         if (currentTrial % 12 === 0) {
