@@ -32,5 +32,5 @@ This repository contains the interface and instrumentation to perform an empiric
  
 ```
 
-Files/paths followed with "*" are the new parts added upon the base structure provided by the assignment.
+Files/paths followed with "*" are the new parts added upon the basic structure provided by the assignment.
 
