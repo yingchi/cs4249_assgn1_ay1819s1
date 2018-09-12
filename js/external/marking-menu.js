@@ -1308,11 +1308,20 @@
             {
               // eslint-disable-next-line no-param-reassign
               parentDOM.style.cursor = 'none';
-              if (menu) closeMenu();
+              if (menu) {
+                window.markingMenuTimings = window.markingMenuTimings || [];
+                window.markingMenuTimings.push(['close', (new Date()).toISOString(), Date.now(),
+                  Date.now() - window.markingMenuTimings[window.markingMenuTimings.length - 1][2],
+                ]);
+                closeMenu();
+              }
               clearStroke();
+              window.markingMenuTimings = window.markingMenuTimings || [];
+              window.markingMenuTimings.push(['open', (new Date()).toISOString(), Date.now()])
               openMenu(notification.menu, notification.center);
               startStroke(notification.center);
               noviceMove(notification.position);
+              console.log('XXX markingMenuTimings', window.markingMenuTimings);
               break;
             }
           case 'change':
@@ -1324,7 +1333,14 @@
           case 'cancel':
             // eslint-disable-next-line no-param-reassign
             parentDOM.style.cursor = '';
-            if (menu) closeMenu();
+            if (menu) {
+              window.markingMenuTimings = window.markingMenuTimings || [];
+              window.markingMenuTimings.push(['close', (new Date()).toISOString(), Date.now(),
+                Date.now() - window.markingMenuTimings[window.markingMenuTimings.length - 1][2],
+              ]);
+              closeMenu();
+            }
+            console.log('XXX markingMenuTimings', window.markingMenuTimings);
             clearStroke();
             break;
           case 'start':
