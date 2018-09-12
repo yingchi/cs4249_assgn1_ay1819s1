@@ -5,11 +5,13 @@ This repository contains the interface and instrumentation to perform an empiric
 ```
 ├── css              
     ├── external           
-    ├── experiment.css       
+    ├── experiment.css         ~   # MODIFIED 
     ├── index.css              *   # stylesheet for index.html 
     ├── questionnaire.css      *   # stylesheet for pre_qn.html and post_qn.html
 ├── js              
-    ├── external          
+    ├── external  
+        ├── sunburst-menu.js   ~   # MODIFIED
+        ... 
     ├── experiment.js          ~   # MODIFIED
     ├── experiment-tracker.js  ~   # MODIFIED
     ├── jquery-2.2.3.min.js    *   # jquery utility js
@@ -49,4 +51,15 @@ Two questionnaires to collect user information and subjective ratings / feedback
 
 ### Modifications on existing files
 #### experiment.js
-Added IV and DV names
+Added IV and DV names；
+Added support for different menu breadth;
+Added break alert every 24 trials;
+
+#### experiment-tracker.js
+Modify reset attempts tracking for marking menu;
+Added tracking for new IV;
+
+#### sunburst-menu.js and experiment.css
+Modified the font for Radial menu.
+Changed letter from all capital to only capitalising the first for Radial menu.
+JUSTIFICATION: It's very hard to read the radial menu compared to the marking menu. So I have made the font size, font family and presentation format consistent.
