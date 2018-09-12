@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Consent Form</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen"/>
+</head>
+
+<body>
+<div id="logo"></div>
+<div id="basic-accordian">
+    <div id="test-header" class="accordion_headings">Home</div>
+    <div id="test-content">
+        <div class="accordion_child">
+            <h1>Consent Form</h1>
+
+            <p><b>Please read the consent form below, and sign the paper consent form that given to you before going to the next step.</b> <br></p>
+            <h2>Consent Form: Comparison of Two Menus</h2>
+            <p>
+                I hereby consent to participate in a research study conducted by
+                <b> Yingchi Pei </b> for an assignment in National University of Singapore Computer Science
+                4249, Human Computer Interaction. <br>
+                I agree to participate in this study the purpose of which is to compare the performance of two types of menu. <br>
+                I understand that <br>
+                - the procedures to be used are using mouse and touch pad to select menu items on a computer <br>
+                - I will receive no compensation for my participation. <br>
+                - I am free to withdraw before or any time during the study without the need to give any
+                explanation.<br>
+                - all materials and results will be kept confidential, and, in particular, that my name
+                and any identifying or identified information will not be associated with the data.
+            </p>
+        </div>
+    </div>
+
+    <form action="instruction.html">
+        <input type="submit" class="submit" value="Next"/>
+    </form>
+    <div id="test1-header" class="accordion_headings"> &nbsp;</div>
+</div>
+</div>
+<div id="footer">
+    <p>Author: Yingchi PEI | CS4249 Project</p>
+</div>
+
+<script>
+    let url = new URL(window.location.href);
+    let userId = url.searchParams.get("user_id");
+    console.log(userId);
+    localStorage.setItem("cs4249exp.userId", userId);
+</script>
+
+</body>
+</html>

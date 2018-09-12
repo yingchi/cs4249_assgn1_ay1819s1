@@ -9,7 +9,7 @@ class ExperimentTracker {
 		this.attempt = null;
 		this.menuType = null;
 		this.menuDepth = null;
-		this.nemuBreadth = null;
+		this.menuBreadth = null;
 		this.inputDevice = null;
 		this.targetItem = null;
 		this.selectedItem = null;
@@ -31,6 +31,12 @@ class ExperimentTracker {
 		this.stopTimer();
 	}
 
+    recordSelectedItemMarking(selectedItem) {
+        this.selectedItem = selectedItem;
+        this.stopTimer();
+        this.attempt--;
+    }
+
 	stopTimer() {
 		
 		this.endTime = Date.now();
@@ -42,6 +48,13 @@ class ExperimentTracker {
 
 	newTrial() {
 		this.attempt = 1;
+	}
+    newTrialMarking() {
+        this.attempt = 0;
+    }
+
+	addAttempt() {
+		this.attempt ++;
 	}
 
 	toCsv() {

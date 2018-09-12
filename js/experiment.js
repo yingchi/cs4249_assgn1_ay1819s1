@@ -107,7 +107,7 @@ function nextTrial() {
 
     if (currentTrial <= numTrials) {
 
-        if (currentTrial % 12 === 0) {
+        if (currentTrial % 24 === 0) {
             window.alert("How about having a 10-second break?")
         }
 
@@ -126,7 +126,12 @@ function nextTrial() {
         document.getElementById("selectedItem").innerHTML = "&nbsp;";
         // Set IV3 state over here
 
-        tracker.newTrial();
+        if (menuType === "Marking") {
+            tracker.newTrialMarking()
+        }
+        else {
+            tracker.newTrial();
+        }
         tracker.trial = currentTrial;
         tracker.menuType = menuType;
         tracker.menuDepth = menuDepth;
@@ -261,12 +266,13 @@ function formatMarkingMenuData(data) {
 function markingMenuOnMouseDown() {
 
     tracker.startTimer();
+    tracker.addAttempt();
 }
 
 //Function to start tracking timer on mouse down
 function markingMenuOnSelect(selectedItem) {
 
-    tracker.recordSelectedItem(selectedItem.name);
+    tracker.recordSelectedItemMarking(selectedItem.name);
     document.getElementById("selectedItem").innerHTML = selectedItem.name;
 }
 
