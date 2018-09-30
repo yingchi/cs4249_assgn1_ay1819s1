@@ -18,7 +18,7 @@
     <link href="css/questionnaire.css" rel="stylesheet" type="text/css" media="all"/>
     <!--stylesheet-css-->
     <link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i"
-          rel="stylesheet">
+    rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
 
     <!-- //css files -->
@@ -27,20 +27,20 @@
     <!-- Default-JavaScript -->
     <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"
-            integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
-            crossorigin="anonymous"></script>
+    integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
+    crossorigin="anonymous"></script>
 
 </head>
 <body>
-<div class="main-container">
-    <h4> &nbsp;</h4>
-    <h1>PRE Questionnaire</h1>
-    <div class="w3l-main">
-        <div class="w3l-from">
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfEbA6qZeDho4gy97Cqg1kcU3wGE6WIxoIY3lD6k8j4AIZBzg/formResponse"
-                  target="_blank"
-                  id="bootstrapForm"
-                  method="POST">
+    <div class="main-container">
+        <h4> &nbsp;</h4>
+        <h1>PRE Questionnaire</h1>
+        <div class="w3l-main">
+            <div class="w3l-from">
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfEbA6qZeDho4gy97Cqg1kcU3wGE6WIxoIY3lD6k8j4AIZBzg/formResponse"
+                target="_blank"
+                id="bootstrapForm"
+                method="POST">
                 <fieldset>
                     <h2>
                         <small>To help us get better understanding of the experiment results, please
@@ -277,7 +277,7 @@
 
                 <!-- Field type: "choices" id: "462451030" -->
                 <fieldset>
-                    <legend for="462451030">Q9: Prior experience level with using marking menu?Very unfamiliar</legend>
+                    <legend for="462451030">Q9: Prior experience level with using marking menu?</legend>
                     <div class="form-group">
                         <div class="radio">
                             <label>
@@ -340,11 +340,11 @@
             error: function () {
 // Submit of form should be successful but JSONP callback will fail because Google Forms
 // does not support it, so this is handled as a failure.
-                alert('Form Submitted. Thanks.');
+alert('Form Submitted. Thanks.');
 // You can also redirect the user to a custom thank-you page:
-                window.location = 'experiment.html'
-            }
-        })
+window.location = 'experiment.html'
+}
+})
     })
 </script>
 

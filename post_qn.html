@@ -17,7 +17,7 @@
     <link href="css/questionnaire.css" rel="stylesheet" type="text/css" media="all"/>
     <!--stylesheet-css-->
     <link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i"
-          rel="stylesheet">
+    rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
 
     <!-- //css files -->
@@ -26,20 +26,20 @@
     <!-- Default-JavaScript -->
     <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"
-            integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
-            crossorigin="anonymous"></script>
+    integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
+    crossorigin="anonymous"></script>
 
 </head>
 <body>
-<div class="main-container">
-    <h4> &nbsp;</h4>
-    <h1>POST Questionnaire</h1>
-    <div class="w3l-main">
-        <div class="w3l-from">
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLSeTIvJg3z7v5i4CfBHMlrnyn77OVRqO9WeKivqbah_S54FjtQ/formResponse"
-                  target="_self"
-                  id="bootstrapForm"
-                  method="POST">
+    <div class="main-container">
+        <h4> &nbsp;</h4>
+        <h1>POST Questionnaire</h1>
+        <div class="w3l-main">
+            <div class="w3l-from">
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSeTIvJg3z7v5i4CfBHMlrnyn77OVRqO9WeKivqbah_S54FjtQ/formResponse"
+                target="_self"
+                id="bootstrapForm"
+                method="POST">
                 <fieldset>
                     <h2>
                         <small>To help us get better understanding of the experiment results, please fill up this
@@ -93,45 +93,6 @@
                         </div>
                     </div>
                 </fieldset>
-
-
-                <!-- Field type: "choices" id: "2046918383" -->
-                <fieldset>
-                    <legend for="2046918383">Q2: Radial menu is easy to use:</legend>
-                    <div class="form-group">
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="entry.1370968337" value="Strongly disagree" required>
-                                Strongly disagree
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="entry.1370968337" value="Disagree" required>
-                                Disagree
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="entry.1370968337" value="Neither agree nor disagree" required>
-                                Neither agree nor disagree
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="entry.1370968337" value="Agree" required>
-                                Agree
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="entry.1370968337" value="Strongly agree" required>
-                                Strongly agree
-                            </label>
-                        </div>
-                    </div>
-                </fieldset>
-
 
                 <!-- Field type: "choices" id: "60767063" -->
                 <fieldset>
@@ -219,13 +180,13 @@
                     <div class="form-group">
                         <div class="radio">
                             <label>
-                                <input type="radio" name="entry.742314107" value="Touch pad" required>
+                                <input type="radio" name="entry.742314107" value="Radial" required>
                                 Radial
                             </label>
                         </div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="entry.742314107" value="Mouse" required>
+                                <input type="radio" name="entry.742314107" value="Marking" required>
                                 Marking
                             </label>
                         </div>
@@ -239,13 +200,13 @@
                     <div class="form-group">
                         <div class="radio">
                             <label>
-                                <input type="radio" name="entry.678701225" value="Touch pad" required>
+                                <input type="radio" name="entry.678701225" value="Radial" required>
                                 Radial
                             </label>
                         </div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="entry.678701225" value="Mouse" required>
+                                <input type="radio" name="entry.678701225" value="Marking" required>
                                 Marking
                             </label>
                         </div>
@@ -259,19 +220,18 @@
                     <div class="form-group">
                         <div class="radio">
                             <label>
-                                <input type="radio" name="entry.1375318532" value="Touch pad" required>
+                                <input type="radio" name="entry.1375318532" value="Radial" required>
                                 Radial
                             </label>
                         </div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="entry.1375318532" value="Mouse" required>
+                                <input type="radio" name="entry.1375318532" value="Marking" required>
                                 Marking
                             </label>
                         </div>
                     </div>
                 </fieldset>
-
 
                 <!-- Field type: "paragraph" id: "1208296639" -->
                 <fieldset>
@@ -329,7 +289,7 @@
             error: function () {
 // Submit of form should be successful but JSONP callback will fail because Google Forms
 // does not support it, so this is handled as a failure.
-                alert('Form Submitted. Thank you very much!');
+alert('Form Submitted. Thank you very much!');
 // You can also redirect the user to a custom thank-you page:
                 // window.location = 'experiment.html'
             }
