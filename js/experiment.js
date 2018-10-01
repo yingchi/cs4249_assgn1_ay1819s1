@@ -107,7 +107,7 @@ function nextTrial() {
 
     if (currentTrial <= numTrials) {
 
-        if (currentTrial % 24 === 0) {
+        if (currentTrial % 24 === 1 && currentTrial > 24) {
             window.alert("How about having a 10-second break?")
         }
 
